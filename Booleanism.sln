@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booleanism", "Booleanism\Booleanism.csproj", "{C40FB63F-E973-4537-9886-7D8DBA58A59D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Booleanism Setup", "Booleanism Setup\Booleanism Setup.vdproj", "{3A188230-68D0-4FF5-9061-12FD499A03DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C40FB63F-E973-4537-9886-7D8DBA58A59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40FB63F-E973-4537-9886-7D8DBA58A59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40FB63F-E973-4537-9886-7D8DBA58A59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40FB63F-E973-4537-9886-7D8DBA58A59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A188230-68D0-4FF5-9061-12FD499A03DC}.Debug|Any CPU.ActiveCfg = Debug
+		{3A188230-68D0-4FF5-9061-12FD499A03DC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D6B90C0-22AD-4943-8AF5-A938474042D7}
+	EndGlobalSection
+EndGlobal

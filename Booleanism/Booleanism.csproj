@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C40FB63F-E973-4537-9886-7D8DBA58A59D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Booleanism</RootNamespace>
+    <AssemblyName>Booleanism</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>booleanism_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Compression.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Core.WinForms, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Diagram.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Diagram.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Gauge.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Maps.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Spreadsheet.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=16.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBool.Designer.cs">
+      <DependentUpon>AboutBool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Alignment.cs" />
+    <Compile Include="Classes\And.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\CircuitDiagram.cs" />
+    <Compile Include="Classes\Clock_Signal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Configuration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Digital.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Digital.Designer.cs">
+      <DependentUpon>Digital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Digital_File.cs" />
+    <Compile Include="Classes\Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Duplicate.cs" />
+    <Compile Include="Classes\FlipFlop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\InvalidControlException.cs" />
+    <Compile Include="Classes\InvalidDigitalNameException.cs" />
+    <Compile Include="Classes\InvalidPinException.cs" />
+    <Compile Include="Classes\InvalidWireException.cs" />
+    <Compile Include="Classes\JK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\LED.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Nand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Nor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Not.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\NullDigitalException.cs" />
+    <Compile Include="Classes\Or.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Pin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Pin.Designer.cs">
+      <DependentUpon>Pin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\PushButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\RS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\TruthTable.cs" />
+    <Compile Include="Classes\Wire.cs" />
+    <Compile Include="Classes\Xor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollapsableGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollapsableGroup.Designer.cs">
+      <DependentUpon>CollapsableGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorlistView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileAssociationHelper.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructionsForm.Designer.cs">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputWindowView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesForm.Designer.cs">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoundTextBox.designer.cs">
+      <DependentUpon>RoundTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMail.Designer.cs">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SideButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SideButton.designer.cs">
+      <DependentUpon>SideButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableTool.Designer.cs">
+      <DependentUpon>TableTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toolbox.Designer.cs">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolboxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolboxForm.Designer.cs">
+      <DependentUpon>ToolboxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBoxView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruthTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruthTableForm.Designer.cs">
+      <DependentUpon>TruthTableForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBool.resx">
+      <DependentUpon>AboutBool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Clock_Signal.resx">
+      <DependentUpon>Clock_Signal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Digital.resx">
+      <DependentUpon>Digital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Display.resx">
+      <DependentUpon>Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\FlipFlop.resx">
+      <DependentUpon>FlipFlop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\LED.resx">
+      <DependentUpon>LED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Not.resx">
+      <DependentUpon>Not.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Pin.resx">
+      <DependentUpon>Pin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\PushButton.resx">
+      <DependentUpon>PushButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollapsableGroup.resx">
+      <DependentUpon>CollapsableGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorlistView.resx">
+      <DependentUpon>ErrorlistView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructionsForm.resx">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputWindowView.resx">
+      <DependentUpon>OutputWindowView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesForm.resx">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesView.resx">
+      <DependentUpon>PropertiesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoundTextBox.resx">
+      <DependentUpon>RoundTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMail.resx">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SideButton.resx">
+      <DependentUpon>SideButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableTool.resx">
+      <DependentUpon>TableTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox.resx">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxForm.resx">
+      <DependentUpon>ToolboxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolBoxView.resx">
+      <DependentUpon>ToolBoxView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruthTableForm.resx">
+      <DependentUpon>TruthTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="booleanism_icon.ico" />
+    <Content Include="bool_icon.ico" />
+    <None Include="Resources\Refresh-icon.png" />
+    <None Include="Resources\long-text-back.png" />
+    <None Include="Resources\text_back.png" />
+    <None Include="Resources\ico.png" />
+    <None Include="Resources\pin_icon.png" />
+    <None Include="Resources\setting_16x16.png" />
+    <None Include="Resources\table_16x16.png" />
+    <None Include="Resources\green_theme.jpg" />
+    <None Include="Resources\wires_16x16.png" />
+    <None Include="Resources\wire_icon.png" />
+    <None Include="Resources\refresh_16x16.png" />
+    <None Include="Resources\pre_16x16.png" />
+    <None Include="Resources\next_16x16.png" />
+    <None Include="Resources\saveicon_16x16.png" />
+    <None Include="Resources\save_16x16.png" />
+    <None Include="Resources\printpre_16x16.png" />
+    <None Include="Resources\print_16x16.png" />
+    <None Include="Resources\page_16x16.png" />
+    <None Include="Resources\symbol-check-icon.png" />
+    <None Include="Resources\save-16x16.png" />
+    <None Include="Resources\save_icon.png" />
+    <None Include="Resources\print_preview_icon.jpg" />
+    <None Include="Resources\print-512.png" />
+    <None Include="Resources\image_file-512.png" />
+    <None Include="Resources\white_led_glow.png" />
+    <None Include="Resources\white_led.png" />
+    <None Include="Resources\yellow_led_glow.png" />
+    <None Include="Resources\purple_led_glow.png" />
+    <None Include="Resources\purple_led.png" />
+    <None Include="Resources\yellow_led.png" />
+    <None Include="Resources\red_led_glow.png" />
+    <None Include="Resources\red_led.png" />
+    <None Include="Resources\green_led_glow.png" />
+    <None Include="Resources\green_led.png" />
+    <None Include="Resources\justify_icon.png" />
+    <None Include="Resources\zoom_icon.png" />
+    <None Include="Resources\rotate_icon.png" />
+    <None Include="Resources\pre_icon.png" />
+    <None Include="Resources\next_icon.png" />
+    <None Include="Resources\allign_icon.png" />
+    <None Include="Resources\copy_icon.png" />
+    <None Include="Resources\delete_icon.png" />
+    <None Include="Resources\delete-all.png" />
+    <None Include="Resources\allignver_icon.png" />
+    <None Include="Resources\blue_led_glow.png" />
+    <None Include="Resources\clock_signal.png" />
+    <Content Include="file_icon.ico" />
+    <None Include="Resources\close_win.png" />
+    <None Include="Resources\file-icon.png" />
+    <None Include="Resources\bullet-go-icon.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\delete_16x16.png" />
+    <None Include="Resources\deleteall_16x16.png" />
+    <None Include="Resources\duplicate_16x16.png" />
+    <None Include="Resources\blue_theme.jpg" />
+    <None Include="Resources\default_theme.jpg" />
+    <None Include="Resources\display_img.png" />
+    <None Include="Resources\display_icon.png" />
+    <None Include="Resources\displayblue_icon.png" />
+    <None Include="Resources\displayGreen_icon.png" />
+    <None Include="Resources\displayYellow_icon.png" />
+    <None Include="Resources\collapse.png" />
+    <None Include="Resources\collapse_hover.png" />
+    <None Include="Resources\display_icon_picker.png" />
+    <None Include="Resources\default_theme2.jpg" />
+    <None Include="Resources\circuit_icon.png" />
+    <None Include="Resources\about.jpg" />
+    <None Include="Resources\booleanism_icon.png" />
+    <None Include="Resources\email.png" />
+    <Content Include="Resources\five_inp_xor_gate.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
